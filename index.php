@@ -20,8 +20,9 @@ if(!preg_match($reg_exUrl, $v[3], $data)){
   echo "<div>" . "http://104.18.38.47:80/streaming/" .$v[3] . "?ZGtkYwV2YwR1ZwN3ZwR=" . "</div>";
 }
 }
-?>
 
 $string = "src1/a9C5z";
 $result = preg_replace('/src1/', '/holaa${1}/', $string);
 print $result;
+
+?>

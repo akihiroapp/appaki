@@ -10,5 +10,5 @@ $options = array(
 
 $context = stream_context_create($options);
 $json = file_get_contents($url, false, $context);
-echo $json;
+var_dump(json_decode($json, true));
 ?>

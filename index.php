@@ -12,8 +12,9 @@ $context = stream_context_create($options);
 $json = file_get_contents($url, false, $context);
 $json_a = json_decode($json);
 foreach ($json_a as $k => $v) {
-$ou =  preg_match('@^(?:http://)?([^/]+)@i', $v[3], $matches);
+$ou =  preg_match('@^(?:http://)?([^/]+)@i', $v[3], $matches)!=FALSE;
 if($ou = true)
+  echo $v[2];
 {   
 }else{
  echo $v[3];

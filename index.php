@@ -14,9 +14,9 @@ $json_a = json_decode($json);
 $reg_exUrl = "/src(.*?)\"/i";
 
 foreach ($json_a as $k => $v) {
-if(!preg_match($reg_exUrl, $v[3])){
-  echo "<div>" . $v[3] . "</div>";
+if(!preg_match($reg_exUrl, $v[3], $data)){
 }else{
+  echo "<div>" . $v[3] . "</div>";
 }
 }
 ?>

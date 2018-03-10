@@ -14,7 +14,7 @@ $json_a = json_decode($json);
 $reg_exUrl = "/(http|https|rtsp|rtmp|:)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
 
 foreach ($json_a as $k => $v) {
-preg_match("/src(.*)\"/i", $v[3], $results) 
+preg_match("/src(.*)\"/i", $v[3], $results);
 echo $results;
 }
 ?>

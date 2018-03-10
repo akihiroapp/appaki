@@ -15,8 +15,8 @@ $reg_exUrl = "/(http|https|rtsp|rtmp|:)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\
 
 foreach ($json_a as $k => $v) {
 if(!preg_match($reg_exUrl, $v[3], $data)){
-  preg_match("/src/i", $v[3]);
-  echo "<div>" . $v[3] . "</div>";
+  
+  echo "<div>" . preg_match("/src/i", $v[3]) . "</div>";
 }else{
 }
 }

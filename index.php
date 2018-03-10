@@ -10,6 +10,8 @@ $options = array(
 
 $context = stream_context_create($options);
 $json = file_get_contents($url, false, $context);
-$character = json_decode($json);
-echo $character;
+$go = json_decode($json);
+foreach ($go as $wizard) {
+	echo $wizard[0]
+}
 ?>

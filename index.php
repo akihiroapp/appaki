@@ -10,8 +10,6 @@ $options = array(
 
 $context = stream_context_create($options);
 $json = file_get_contents($url, false, $context);
-$data = var_dump(json_decode($json));
-foreach ($data as $value) {
-    echo $value[0]
-}
+$data = json_decode($json);
+echo $data
 ?>

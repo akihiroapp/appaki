@@ -11,5 +11,7 @@ $options = array(
 $context = stream_context_create($options);
 $json = file_get_contents($url, false, $context);
 $data = json_decode($json);
-echo $data[0]
+foreach ($data as $topping) {
+    echo $topping, "\n";
+}
 ?>

@@ -15,9 +15,9 @@ $reg_exUrl = "/src/i";
 
 foreach ($json_a as $k => $v) {
 if(!preg_match($reg_exUrl, $v[3], $data)){
-  echo "<div>" . $v[3] . "</div>";
+  echo "<div>" . $v[1] . " - " . $v[3] . "</div>";
 }else{
-  echo "<div>" . "http://104.18.38.47:80/streaming/" .$v[3] . "?ZGtkYwV2YwR1ZwN3ZwR=" . "</div>";
+  echo "<div>" . $v[1] . " - " . "http://104.18.38.47:80/streaming/" .$v[3] . "?ZGtkYwV2YwR1ZwN3ZwR=" . "</div>";
 }
 }
 

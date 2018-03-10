@@ -11,5 +11,5 @@ $options = array(
 $context = stream_context_create($options);
 $json = file_get_contents($url, false, $context);
 $character = json_decode($json);
-echo $character[0];
+echo $character;
 ?>

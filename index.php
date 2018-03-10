@@ -21,3 +21,7 @@ if(!preg_match($reg_exUrl, $v[3], $data)){
 }
 }
 ?>
+
+$string = "src1/a9C5z";
+$result = preg_replace('/src1/', '/holaa${1}/', $string);
+print $result;

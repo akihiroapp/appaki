@@ -16,7 +16,7 @@ $reg_exUrl = "/src/i";
 foreach ($json_a as $k => $v) {
 if(!preg_match($reg_exUrl, $v[3], $data)){
 }else{
-  echo "<div>" . $data[1] . $v[3] . "</div>";
+  echo "<div>" . $v[3] . "</div>";
 }
 }
 ?>

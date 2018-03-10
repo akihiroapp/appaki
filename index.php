@@ -23,6 +23,8 @@ foreach ($json_a as $k => $v) {
 if(preg_match("/^$regex$/i", $v[3])) // `i` flag for case-insensitive
 { 
   echo $v[3] ;
-} 
+}else{
+  echo "##" . $v[3] . "$$";
+}
 }
 ?>

@@ -11,7 +11,7 @@ $options = array(
 $context = stream_context_create($options);
 $json = file_get_contents($url, false, $context);
 $json_a = json_decode($json);
-$reg_exUrl = "/(http|https|rtsp|rtmp|:)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
+$reg_exUrl = "/(http|https|rtsp|rtmp|:)\:\/\/[a-zA-Z0-9\-\.]+:([0-9]+)\.[a-zA-Z]{2,3}(\/\S*)?/";
 
 foreach ($json_a as $k => $v) {
 if(!preg_match($reg_exUrl, $v[3], $data)){

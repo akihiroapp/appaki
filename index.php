@@ -11,7 +11,7 @@ $options = array(
 $context = stream_context_create($options);
 $json = file_get_contents($url, false, $context);
 $data = json_decode($json);
-foreach ($data as $k=> $val) {
+foreach ($data as $val) {
     echo $val[3]
 }
 ?>

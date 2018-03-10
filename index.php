@@ -9,6 +9,6 @@ $options = array(
 );
 
 $context = stream_context_create($options);
-$results = file_get_contents($url, false, $context);
-echo json_encode($results, JSON_PRETTY_PRINT);
+$file = file_get_contents($url, false, $context);
+echo json_encode($file, JSON_PRETTY_PRINT);
 ?>

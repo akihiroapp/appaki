@@ -20,7 +20,7 @@ foreach ($json_a as $k => $v) {
 if(!preg_match($reg_exUrl, $v[3], $data)){
 }else{
   echo "#EXTINF:-1 ," . $v[1] ."\n";
-  echo "http://104.18.38.47:80/streaming/" .$v[3] . "?ZGtkYwV2YwR1ZwN3ZwR=|User-Agent=Lavf/57.71.100|Host=app.playerlatino.net|Token=ZGtkYwV2YwR1ZwN3ZwR=" ."\n";
+  echo "http://104.18.38.47/streaming/" .$v[3] . "?ZGtkYwV2YwR1ZwN3ZwR=|User-Agent=Lavf/57.71.100|Host=app.playerlatino.net|Token=ZGtkYwV2YwR1ZwN3ZwR=" ."\n";
 }
 }
 break;

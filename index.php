@@ -20,7 +20,7 @@ foreach ($json_a as $k => $v) {
 if(!preg_match($reg_exUrl, $v[3], $data)){
 }else{
   echo "#EXTINF:-1 ," . $v[1] ."\n";
-  echo "http://104.18.38.47:80/streaming/" .$v[3] . "?ZGtkYwV2YwR1ZwN3ZwR=" ."\n";
+  echo "http://104.18.38.47:80/streaming/" .$v[3] . "?ZGtkYwV2YwR1ZwN3ZwR=|User-Agent=Lavf/57.71.100|Accept=*/*|Connection=close|Host=app.playerlatino.net|Token=ZGtkYwV2YwR1ZwN3ZwR=" ."\n";
 }
 }
 break;
@@ -36,7 +36,7 @@ case "all":
 foreach ($json_a as $k => $v) {
 if(!preg_match($reg_exUrl, $v[3], $data)){
   echo "#EXTINF:-1 ," . $v[1] . "  ";
-  echo "http://104.18.38.47:80/streaming/" .$v[3] . "?ZGtkYwV2YwR1ZwN3ZwR=" . "  ";
+  echo "http://104.18.38.47:80/streaming/" .$v[3] . "?ZGtkYwV2YwR1ZwN3ZwR=HTTP/1.1" . "  ";
 }else{
   echo "#EXTINF:-1 ," . $v[1] . "  ";
   echo $v[3];

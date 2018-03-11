@@ -27,18 +27,18 @@ break;
 case "normal":
 foreach ($json_a as $k => $v) {
 if(!preg_match($reg_exUrl, $v[3], $data)){
-  echo "#EXTINF:-1 ," . $v[1];
-  echo $v[3];
+  echo "#EXTINF:-1 ," . $v[1] . "  ";
+  echo $v[3] . "  ";
 }
 }
 break;
 case "all":
 foreach ($json_a as $k => $v) {
 if(!preg_match($reg_exUrl, $v[3], $data)){
-  echo "#EXTINF:-1 ," . $v[1];
-  echo "http://104.18.38.47:80/streaming/" .$v[3] . "?ZGtkYwV2YwR1ZwN3ZwR=";
+  echo "#EXTINF:-1 ," . $v[1] . "  ";
+  echo "http://104.18.38.47:80/streaming/" .$v[3] . "?ZGtkYwV2YwR1ZwN3ZwR=" . "  ";
 }else{
-  echo "#EXTINF:-1 ," . $v[1];
+  echo "#EXTINF:-1 ," . $v[1] . "  ";
   echo $v[3];
 }
 }

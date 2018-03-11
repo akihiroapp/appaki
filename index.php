@@ -12,7 +12,8 @@ $options = array(
 $context = stream_context_create($options);
 $json = file_get_contents($url, false, $context);
 $json_a = json_decode($json);
-$pre = !preg_match("/src/i", $v[3], $data);
+$reg_exUrl = "/src/i";
+$pre = !preg_match($reg_exUrl, $v[3], $data);
 switch ($aki){
 case "premium":
 foreach ($json_a as $k => $v) {

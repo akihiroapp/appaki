@@ -42,5 +42,19 @@ if(!preg_match($reg_exUrl, $v[3], $data)){
   echo $v[3];
 }
 }
+break;
+  case "stream":
+    $url = "http://104.18.38.47/streaming/src5/q6Tfo?ZGtkYwV2YwR1ZwN3ZwR=";
+
+$options = array(
+  'http'=>array(
+    'method'=>"GET",
+    'header'=>"Host: app.playerlatino.net" . "Token: ZGtkYwV2YwR1ZwN3ZwR="
+  )
+);
+
+$context = stream_context_create($options);
+$json = file_get_contents($url, false, $context);
+echo $json;
 }
 ?>

@@ -8,7 +8,7 @@ class proxyClass {
     var $PURL=array();
     var $RESPONSE=array();
     // Add all domains, servers(with ports) you want to access through this proxy to the list of allowedHosts
-    var $allowedHosts = array('https://app-iptv.herokuapp.com/proxy.php');
+    var $allowedHosts = array('app-iptv.herokuapp.com');
 
     public function __construct() {
         define(HOST,$_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF']);

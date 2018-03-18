@@ -8,7 +8,7 @@ class proxyClass {
     var $PURL=array();
     var $RESPONSE=array();
     // Add all domains, servers(with ports) you want to access through this proxy to the list of allowedHosts
-    var $allowedHosts = array('www.example.com','localhost','someserver:8080');
+    var $allowedHosts = array('https://herokuapp.com');
 
     public function __construct() {
         define(HOST,$_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF']);

